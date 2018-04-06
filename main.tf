@@ -1,6 +1,6 @@
 resource "aws_cloudtrail" "cloudtrail" {
   name                          = "cloudtrail"
-  s3_bucket_name                = "${var.s3_bucket_name}"
+  s3_bucket_name                = "${aws_s3_bucket.id}"
   tags                          = "${var.tags}"
   is_multi_region_trail         = "${var.is_multi_region_trail}"
   include_global_service_events = "${var.include_global_service_events}"
