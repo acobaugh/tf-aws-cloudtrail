@@ -1,7 +1,7 @@
 output "cloudtrail_id" {
-  value = "${aws_cloudtrail.default.id}"
+  value = "${aws_cloudtrail.cloudtrail.id}"
 }
 
 output "cloudtrail_arn" {
-  value = "${aws_cloudtrail.default.arn}"
+  value = "${aws_cloudtrail.cloudtrail.arn}"
 }
